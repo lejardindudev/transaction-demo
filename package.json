@@ -1,0 +1,25 @@
+{
+  "name": "mongo-transaction-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "_comments": {
+    "test_memorySerrer_rapport" : "jest --runInBand --coverage --verbose",
+    "test_memoryServer_only": "jest --runInBand "
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.1",
+    "supertest": "^7.0.0"
+  }
+}

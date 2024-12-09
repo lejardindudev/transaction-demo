@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Manager - Gestion de recettes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Gourmet Manager</h1>
+            <p class="header__subtitle">Votre livre de recettes en ligne</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Section des catégories -->
+        <section class="categories">
+            <h2 class="categories__title">Catégories</h2>
+            <ul class="categories__list">
+                <li class="categories__item"><a href="#" class="categories__link">Entrées</a></li>
+                <li class="categories__item"><a href="#" class="categories__link">Plats principaux</a></li>
+                <li class="categories__item"><a href="#" class="categories__link">Desserts</a></li>
+                <li class="categories__item"><a href="#" class="categories__link">Végétarien</a></li>
+                <li class="categories__item"><a href="#" class="categories__link">Sans gluten</a></li>
+            </ul>
+        </section>
+
+        <!-- Section des recettes -->
+        <section class="recipes">
+            <h2 class="recipes__title">Liste des Recettes</h2>
+            <ul class="recipes__list">
+                <li class="recipes__item">
+                    <h3 class="recipes__name">Risotto aux champignons</h3>
+                    <p class="recipes__category">Plat principal</p>
+                    <div class="recipes__details">
+                        <p class="recipes__description">Un risotto crémeux aux champignons de saison, relevé d’une touche de parmesan.</p>
+                        <p class="recipes__ingredients"><strong>Ingrédients :</strong> Riz Arborio, Champignons (cèpes, girolles), Bouillon de légumes, Parmesan râpé, Beurre, Oignon, Ail.</p>
+                    </div>
+                </li>
+                <li class="recipes__item">
+                    <h3 class="recipes__name">Soupe de potimarron et châtaignes</h3>
+                    <p class="recipes__category">Entrée</p>
+                    <div class="recipes__details">
+                        <p class="recipes__description">Une soupe veloutée au goût délicat de potimarron et de châtaignes grillées.</p>
+                        <p class="recipes__ingredients"><strong>Ingrédients :</strong> Potimarron, Châtaignes, Bouillon de volaille, Crème fraîche, Beurre, Oignon, Noix de muscade.</p>
+                    </div>
+                </li>
+                <li class="recipes__item">
+                    <h3 class="recipes__name">Tarte Tatin aux pommes caramélisées</h3>
+                    <p class="recipes__category">Dessert</p>
+                    <div class="recipes__details">
+                        <p class="recipes__description">Un classique des desserts français, avec des pommes caramélisées renversées sur une pâte croustillante.</p>
+                        <p class="recipes__ingredients"><strong>Ingrédients :</strong> Pommes, Sucre, Beurre, Pâte feuilletée, Cannelle.</p>
+                    </div>
+                </li>
+                <!-- Ajoutez d'autres recettes ici -->
+            </ul>
+        </section>
+
+        <!-- Formulaire d'ajout dans l'aside -->
+        <aside class="add-recipe">
+            <h2 class="add-recipe__title">Ajouter une Nouvelle Recette</h2>
+            <form class="add-recipe__form" action="#" method="POST">
+                <div class="add-recipe__field">
+                    <label class="add-recipe__label" for="recipe-title">Titre de la Recette</label>
+                    <input class="add-recipe__input" type="text" id="recipe-title" name="recipe-title" required>
+                </div>
+                <div class="add-recipe__field">
+                    <label class="add-recipe__label" for="recipe-description">Description</label>
+                    <textarea class="add-recipe__textarea" id="recipe-description" name="recipe-description" required></textarea>
+                </div>
+                <div class="add-recipe__field">
+                    <label class="add-recipe__label" for="recipe-category">Catégorie</label>
+                    <select class="add-recipe__select" id="recipe-category" name="recipe-category" required>
+                        <option value="Entree">Entrée</option>
+                        <option value="Plat">Plat principal</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Vegetarien">Végétarien</option>
+                        <option value="SansGluten">Sans gluten</option>
+                    </select>
+                </div>
+                <div class="add-recipe__field">
+                    <label class="add-recipe__label" for="recipe-ingredients">Ingrédients</label>
+                    <input class="add-recipe__input" type="text" id="recipe-ingredients" name="recipe-ingredients[]" required>
+                    <button type="button" class="add-recipe__button" id="add-ingredient">Ajouter un ingrédient</button>
+                </div>
+                <button class="add-recipe__submit" type="submit">Ajouter la Recette</button>
+            </form>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">Gourmet Manager © 2024 - Un projet réalisé par [Nom de l'équipe ou de l'apprenant].</p>
+            <p class="footer__text">Retrouvez toutes nos recettes sur <a href="#" class="footer__link">notre site</a>.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
